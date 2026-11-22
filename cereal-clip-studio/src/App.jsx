@@ -19,7 +19,7 @@ import {
   Zap,
   Volume2,
   VolumeX,
-  MessageSquareFlame,
+  MessageSquareText,
   Clock
 } from 'lucide-react';
 
@@ -691,7 +691,7 @@ function ClipStudioApp() {
           <div className="rounded-2xl bg-[#0d1019] border border-zinc-800/90 p-4 space-y-3.5">
             <div className="flex items-center justify-between gap-2">
               <h2 className="text-xs font-bold uppercase tracking-widest text-fuchsia-400 flex items-center gap-2">
-                <MessageSquareFlame className="w-4 h-4" /> 2. Chat Hype Scorer
+                <MessageSquareText className="w-4 h-4" /> 2. Chat Hype Scorer
               </h2>
               <button
                 onClick={() => analyzeChatAndRank(chatLogInput, videoDuration)}
