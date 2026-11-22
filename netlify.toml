@@ -1,0 +1,13 @@
+# The app lives in the cereal-clip-studio/ subfolder, so tell Netlify
+# to build from there and publish Vite's output folder.
+[build]
+  base = "cereal-clip-studio"
+  command = "npm ci --include=dev && npm run build"
+  publish = "dist"
+
+# Single-page app: serve index.html for any path that isn't a real file,
+# so refreshing or deep-linking never shows a 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
